@@ -1,0 +1,54 @@
+# Ignorer les fichiers de configuration sensibles
+config/gitlab-secrets.json
+config/gitlab.rb
+config/initial_root_password
+config/ssh_host_ecdsa_key
+config/ssh_host_ecdsa_key.pub
+config/ssh_host_ed25519_key
+config/ssh_host_ed25519_key.pub
+config/ssh_host_rsa_key
+config/ssh_host_rsa_key.pub
+
+# Ignorer les fichiers de données et de socket
+data/*.socket
+data/**/*.socket
+data/gitlab-rails/upgrade-status/*
+data/gitlab-shell/config.yml
+data/gitlab-workhorse/VERSION
+data/gitlab-workhorse/config.toml
+data/gitlab-workhorse/sockets/*
+data/.gitconfig
+data/alertmanager/alertmanager.yml
+data/git-data/repositories/.gitaly-metadata
+data/gitaly/VERSION
+data/gitaly/config.toml
+data/gitaly/gitaly.socket
+data/gitaly/run/*
+data/gitlab-rails/sockets/*
+data/gitlab-rails/etc/*
+data/gitlab-rails/RUBY_VERSION
+data/gitlab-rails/REVISION
+data/gitlab-exporter/RUBY_VERSION
+data/gitlab-exporter/gitlab-exporter.yml
+data/gitlab-kas/VERSION
+data/gitlab-kas/gitlab-kas-config.yml
+
+# Ignorer les logs Nginx
+data/nginx/logs/
+
+# Ignorer les fichiers générés par logrotate
+data/logrotate/logrotate.status
+
+# Ignorer les fichiers de configuration sensibles et les logs
+.gitlab/config/secrets.yml
+.gitlab/logs/
+.gitlab/data/
+
+# Ignorer les configurations du runner
+runner/config/
+
+# Ignorer les fichiers de logs
+logs/*
+
+# Ignorer le fichier de configuration CI/CD de GitLab
+.gitlab-ci.yml
